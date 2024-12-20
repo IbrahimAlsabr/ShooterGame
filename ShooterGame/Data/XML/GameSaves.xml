@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GameSaves>
+    <Game>
+        <PlayerName>JohnDoe</PlayerName>
+        <Score>2000</Score>
+        <Level>Easy</Level>
+        <Date>2024-12-15</Date>
+    </Game>
+    <Game>
+        <PlayerName>JohnDoe</PlayerName>
+        <Score>3000</Score>
+        <Level>Medium</Level>
+        <Date>2024-12-16</Date>
+    </Game>
+    <Game>
+        <PlayerName>JohnDoe</PlayerName>
+        <Score>3500</Score>
+        <Level>Hard</Level>
+        <Date>2024-12-17</Date>
+    </Game>
+    <Game>
+        <PlayerName>JohnDoe</PlayerName>
+        <Score>4000</Score>
+        <Level>Medium</Level>
+        <Date>2024-12-18</Date>
+    </Game>
+    <Game>
+        <PlayerName>JohnDoe</PlayerName>
+        <Score>3200</Score>
+        <Level>Easy</Level>
+        <Date>2024-12-19</Date>
+    </Game>
+</GameSaves>

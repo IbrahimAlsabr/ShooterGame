@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/ibrah/Documents/Projects/ShooterGame/ShooterGame/Content/Fonts/DefaultFont.spritefont</SourceFile>
+  <SourceTime>2024-12-13T17:10:48.4766448+01:00</SourceTime>
+  <DestFile>C:/Users/ibrah/Documents/Projects/ShooterGame/ShooterGame/Content/bin/DesktopGL/Content/Fonts/DefaultFont.xnb</DestFile>
+  <DestTime>2024-12-13T17:12:17.7927355+01:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2024-08-16T19:05:56+02:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2024-08-16T19:05:56+02:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

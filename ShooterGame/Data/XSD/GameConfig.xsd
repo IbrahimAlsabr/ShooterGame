@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Déclaration de l'élément racine GameConfig -->
+    <xs:element name="GameConfig">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Général -->
+                <xs:element name="GeneralSettings">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Écran -->
+                            <xs:element name="Screen">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Width" type="xs:integer"/>
+                                        <xs:element name="Height" type="xs:integer"/>
+                                        <xs:element name="FrameRate" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- Contrôles -->
+                            <xs:element name="Controls">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MoveUp" type="xs:string"/>
+                                        <xs:element name="MoveDown" type="xs:string"/>
+                                        <xs:element name="MoveLeft" type="xs:string"/>
+                                        <xs:element name="MoveRight" type="xs:string"/>
+                                        <xs:element name="ArrowUp" type="xs:string"/>
+                                        <xs:element name="ArrowDown" type="xs:string"/>
+                                        <xs:element name="ArrowLeft" type="xs:string"/>
+                                        <xs:element name="ArrowRight" type="xs:string"/>
+                                        <xs:element name="Pause" type="xs:string"/>
+                                        <xs:element name="Shoot" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Niveaux de difficulté -->
+                <xs:element name="DifficultyLevels">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Level" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <!-- Joueur -->
+                                        <xs:element name="Player">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Speed" type="xs:integer"/>
+                                                    <xs:element name="EnemiesNumber" type="xs:integer"/>
+                                                    <xs:element name="ProjectileCooldown" type="xs:float"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <!-- Ennemis -->
+                                        <xs:element name="Enemies">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="SpawnRate" type="xs:integer"/>
+                                                    <xs:element name="MinSpeed" type="xs:integer"/>
+                                                    <xs:element name="MaxSpeed" type="xs:integer"/>
+                                                    <xs:element name="EnemiesNumber" type="xs:integer"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <!-- Projectiles -->
+                                        <xs:element name="Projectiles">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Speed" type="xs:integer"/>
+                                                    <xs:element name="Damage" type="xs:integer"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Easy"/>
+                                                <xs:enumeration value="Medium"/>
+                                                <xs:enumeration value="Hard"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

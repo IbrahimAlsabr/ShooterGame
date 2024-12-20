@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Définition de l'élément racine PlayerProfile -->
+    <xs:element name="PlayerProfile">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Nom du joueur -->
+                <xs:element name="PlayerName" type="xs:string"/>
+                <!-- Dernier niveau joué, limité à une énumération -->
+                <xs:element name="LastLevel">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Easy"/>
+                            <xs:enumeration value="Medium"/>
+                            <xs:enumeration value="Hard"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <!-- Dernier score -->
+                <xs:element name="LastScore" type="xs:integer"/>
+                <!-- Dernière date jouée -->
+                <xs:element name="LastPlayed" type="xs:date"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

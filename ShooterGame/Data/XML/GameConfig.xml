@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GameConfig>
+    <GeneralSettings>
+        <Screen>
+            <Width>1920</Width>
+            <Height>1080</Height>
+            <FrameRate>60</FrameRate>
+        </Screen>
+        <Controls>
+            <MoveUp>W</MoveUp>
+            <MoveDown>S</MoveDown>
+            <MoveLeft>A</MoveLeft>
+            <MoveRight>D</MoveRight>
+            <ArrowUp>Up</ArrowUp>
+            <ArrowDown>Down</ArrowDown>
+            <ArrowLeft>Left</ArrowLeft>
+            <ArrowRight>Right</ArrowRight>
+            <Pause>Escape</Pause>
+            <Shoot>Space</Shoot>
+        </Controls>
+    </GeneralSettings>
+
+    <DifficultyLevels>
+
+        <!-- ================ EASY LEVEL ================ -->
+        <Level name="Easy">
+            <Player>
+                <Speed>150</Speed>
+                <EnemiesNumber>5</EnemiesNumber>
+                <ProjectileCooldown>1.5</ProjectileCooldown>
+            </Player>
+            <Enemies>
+                <SpawnRate>3</SpawnRate>
+                <MinSpeed>100</MinSpeed>
+                <MaxSpeed>300</MaxSpeed>
+                <EnemiesNumber>20</EnemiesNumber>
+            </Enemies>
+            <Projectiles>
+                <Speed>250</Speed>
+                <Damage>1</Damage>
+            </Projectiles>
+        </Level>
+
+        <!-- ================ MEDIUM LEVEL ================ -->
+        <Level name="Medium">
+            <Player>
+                <Speed>200</Speed>
+                <EnemiesNumber>3</EnemiesNumber>
+                <ProjectileCooldown>1.0</ProjectileCooldown>
+            </Player>
+            <Enemies>
+                <SpawnRate>2</SpawnRate>
+                <MinSpeed>300</MinSpeed>
+                <MaxSpeed>600</MaxSpeed>
+                <EnemiesNumber>30</EnemiesNumber>
+            </Enemies>
+            <Projectiles>
+                <Speed>300</Speed>
+                <Damage>2</Damage>
+            </Projectiles>
+        </Level>
+
+        <!-- ================ HARD LEVEL ================ -->
+        <Level name="Hard">
+            <Player>
+                <Speed>250</Speed>
+                <EnemiesNumber>2</EnemiesNumber>
+                <ProjectileCooldown>0.8</ProjectileCooldown>
+            </Player>
+            <Enemies>
+                <SpawnRate>1</SpawnRate>
+                <MinSpeed>600</MinSpeed>
+                <MaxSpeed>1000</MaxSpeed>
+                <EnemiesNumber>40</EnemiesNumber>
+            </Enemies>
+            <Projectiles>
+                <Speed>350</Speed>
+                <Damage>3</Damage>
+            </Projectiles>
+        </Level>
+    </DifficultyLevels>
+    
+</GameConfig>

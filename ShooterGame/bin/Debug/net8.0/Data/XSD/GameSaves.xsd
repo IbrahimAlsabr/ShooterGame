@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Déclaration de l'élément racine GameSaves -->
+    <xs:element name="GameSaves">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Déclaration des éléments Game -->
+                <xs:element name="Game" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Déclaration des sous-éléments de Game -->
+                            <xs:element name="PlayerName" type="xs:string"/>
+                            <xs:element name="Score" type="xs:integer"/>
+                            <xs:element name="Level">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Easy"/>
+                                        <xs:enumeration value="Medium"/>
+                                        <xs:enumeration value="Hard"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Date" type="xs:date"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+
